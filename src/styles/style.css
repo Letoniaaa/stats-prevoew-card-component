@@ -36,7 +36,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
 }
 
 .container{
@@ -48,6 +47,7 @@ body{
     max-width: 1100px;
     border-radius: 10px;
     height: 410px;
+    margin-top: 100px;
 }
 
 .info{
@@ -130,7 +130,7 @@ h2{
     display: none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1020px){
     
     .container{
         display: flex;
@@ -139,7 +139,9 @@ h2{
         justify-content: center;
         text-align: center;
         width: 330px;
-        margin-top: 20px;
+        height: 800px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .computador{
@@ -147,8 +149,46 @@ h2{
     }
 
     .celular{
-        display: none;
+        display: flex;
         width: 330px;
         position: relative;
+        border-radius: 10px 10px 0 0;
+        
+    }
+
+    .roxo{
+        position: absolute;
+        background-color: hsla(277, 64%, 61%, 0.555);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+        height: 243px;
+    }
+
+    .info{
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        padding: 10px;
+    }
+
+    .value{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
